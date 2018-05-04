@@ -1,0 +1,10 @@
+<h2>Movie Home</h2>
+
+<ul>
+  <li *ngFor="let oneMovie of movieTruc.movies">
+    <h3>{{oneMovie.room}}</h3>
+    <img [src] = "oneMovie.poster" />
+    <p>{{oneMovie.title}}</p>
+    <a routerLink="/movie/:blahId">See Details</a>
+  </li>
+</ul>
